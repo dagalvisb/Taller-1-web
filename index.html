@@ -3,25 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tienda de Computadores</title>
+    <title id="titulo"></title>
     <link rel="stylesheet" href="public/bootstrap-5.3.3-dist/css/bootstrap.min.css">
 </head>
-<body>
-    <header>
-        <h1>Los mejores productos a los mejores precios</h1>
+<body class="container text-bg-dark ">
+    <header class="text-center pb-3 mb-4 border-bottom">
+        <h1 id="titulo1"></h1>
+        <h3>Los mejores productos a los mejores precios</h3>
         <p>Somos una tienda enfocada en brindar la mejor informacion tanto en componentes como en asesorieas personalizadas.</p>
     </header>
 
-    <div>
-        <h3>Nuestros productos</h3>
-    </div>
+    <section>
+        <div class="container ">
+            <h3 class="text-center">Nuestros productos</h3>
+            <div>
+                <table  class="table table-success table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nombre</th>
+                            <th scope="col">Descripcion</th>
+                            <th scope="col">precios</th>
+                            <th scope="col">Imagen</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla">
+                    </tbody>
+                    </table>
+            </div>
+        </div>
+    </section>
 
-    <div>
-        <h3>Contactanos:</h3>
-        <li>
-            <ul></ul>
-        </li>
-    </div>
+    <section>
+        <div>
+            <h3>Contactanos:</h3>
+            <p id="nombre_tienda"></p>
+            <p id="correo_tienda"></p>
+            <p id="telefono_tienda"></p>
+            <p id="direccion_tienda"></p>
+        </div>
+    </section>
     <script src="public/bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
